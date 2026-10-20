@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>日本动漫风格图集 · 100 张</title>
+  <meta name="description" content="100 张日本动漫风格角色、街景、神社、校园与幻想场景图集。" />
+  <style>
+    :root {
+      --ink: #19223b;
+      --muted: #68708b;
+      --paper: #f7f5f1;
+      --line: #e7e3dc;
+      --accent: #e85d75;
+      --accent-2: #6b78d8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(232,93,117,.16), transparent 28rem),
+        radial-gradient(circle at 100% 14%, rgba(107,120,216,.14), transparent 30rem),
+        var(--paper);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    }
+    header { max-width: 1380px; margin: 0 auto; padding: 54px 28px 30px; }
+    .eyebrow { color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { margin: 12px 0 10px; max-width: 760px; font-family: Georgia, "Songti SC", serif; font-size: clamp(38px, 6vw, 76px); line-height: .98; letter-spacing: -.045em; }
+    .intro { max-width: 680px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; background: rgba(255,255,255,.65); color: var(--muted); font-size: 12px; }
+    main { max-width: 1380px; margin: 0 auto; padding: 0 28px 70px; }
+    .gallery { columns: 5 220px; column-gap: 16px; }
+    figure { position: relative; margin: 0 0 16px; break-inside: avoid; overflow: hidden; border-radius: 18px; background: #eceaf0; box-shadow: 0 12px 28px rgba(26,31,57,.09); }
+    figure img { display: block; width: 100%; height: auto; min-height: 150px; object-fit: cover; background: linear-gradient(135deg, #d8dff7, #f7d7db); }
+    figure figcaption { position: absolute; right: 10px; bottom: 10px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: rgba(25,34,59,.72); color: white; font-size: 11px; backdrop-filter: blur(8px); }
+    figure.failed { min-height: 150px; display: grid; place-items: center; padding: 24px; background: linear-gradient(135deg, #d8dff7, #f7d7db); }
+    figure.failed img { display: none; }
+    figure.failed::before { content: "图像暂时无法加载"; color: var(--ink); font-size: 13px; }
+    footer { max-width: 1380px; margin: 0 auto; padding: 0 28px 44px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    @media (max-width: 700px) { header { padding: 34px 18px 24px; } main, footer { padding-left: 18px; padding-right: 18px; } .gallery { columns: 2 150px; column-gap: 10px; } figure { margin-bottom: 10px; border-radius: 13px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">VISUAL COLLECTION / 001</div>
+    <h1>日本动漫风格<br />100 张图集</h1>
+    <p class="intro">角色、神社、樱花、街景、列车、夏日祭与幻想场景。图片直接嵌入页面，打开后可以滚动浏览。</p>
+    <div class="stats"><span class="pill">100 张图片</span><span class="pill">响应式画廊</span><span class="pill">直接加载图片</span></div>
+  </header>
+  <main><section class="gallery" id="gallery" aria-label="100 张日本动漫风格图片"></section></main>
+  <footer>图片来自公开网络资源；如需商用、转载或印刷，请先确认对应图片的授权范围。</footer>
+  <script>
+    const images = [
+      "https://konachan.com/jpeg/cfa25970c8f3f873e093970f2cb15910/Konachan.com%20-%20229434%20animal%20brown_hair%20building%20dress%20flowers%20fox%20fuji_choko%20katana%20moon%20night%20original%20petals%20red_eyes%20short_hair%20sky%20stars%20sword%20thighhighs%20weapon.jpg",
+      "https://media.wallpaperengine.space/posters/v1/japanese-town-backstreet.webp",
+      "https://images7.alphacoders.com/741/741584.jpg",
+      "https://rare-gallery.com/thumbnail/5485237-anime-girls-original-characters-japanese-clothes.jpg",
+      "https://wallpaper-house.com/data/out/8/wallpaper2you_274480.jpg",
+      "https://dthezntil550i.cloudfront.net/ww/latest/ww2103311602131470018807096/b15b1fb5-24ff-491b-aec4-ae27ec98738a.jpg",
+      "https://img.zcool.cn/community/031dubedjhemneyjtn2eo333336.png",
+      "https://www.artpuzzle.com.tr/idea/ee/16/myassets/products/639/art-puzzle-pembe-kilic-1000-parca-puzzle-26318.jpg?revision=1766520045",
+      "https://images3.alphacoders.com/958/thumb-1920-958333.png",
+      "https://cdn.mos.cms.futurecdn.net/4w9mt7ZyeMJjkQAVo5RRTn.jpg",
+      "https://i.pinimg.com/originals/01/81/9b/01819bfb2f42996ef94c26ba17365b5c.jpg",
+      "https://static.fnac-static.com/multimedia/Images/FD/Comete/34630/CCP_IMG_996xAUTO/402740.jpg",
+      "https://static.zerochan.net/Magical.Suite.Prism.Nana.full.2118692.jpg",
+      "https://konachan.com/sample/cf541f792c5c82841950796585b48878/Konachan.com%20-%20219425%20sample.jpg",
+      "https://u0tjiccxxxzr8amg.public.blob.vercel-storage.com/1781967620829-cP7TXbPaE28oRtbRo5CU67FcpMUHT0.jpg",
+      "https://imya.ai/images/seedance-2-0/seedance-2-0-use-case-anime-stylized.webp",
+      "https://static.zerochan.net/Futari.wa.Precure.full.31019.jpg",
+      "https://pbs.twimg.com/media/GxFZlJfa4AAz9ua?format=jpg&name=small",
+      "https://imas.gamedbs.jp/cgss/images/mXVxfnAZT-Kn_W9yNP3M8Knfx_Z02ao4jP6kDDl_LM0.jpg",
+      "https://pbs.twimg.com/media/GXGX4T2bEAAZkHb.jpg",
+      "https://image.cdn2.seaart.ai/2023-07-06/42075485728837/d7052616f538bca554ab3165142428bd92a03c28_low.webp",
+      "https://pbs.twimg.com/media/GN8jOBNbUAAm8qx.jpg",
+      "https://klev.club/uploads/posts/2023-10/1697841700_klev-club-p-arti-anime-v-shkolnoi-forme-24.jpg",
+      "https://file.dorime.ai/cdn-cgi/image/width%3D1000%2Cfit%3Dcover%2Conerror%3Dredirect%2Cformat%3Dauto/character_cover/7fbea57a-19aa-46c8-80da-2925144a5c51.png",
+      "https://e1.pxfuel.com/desktop-wallpaper/149/701/desktop-wallpaper-train-station-japanese-anime-train.jpg",
+      "https://konachan.com/image/8180ecc607f84d966ac857185ad5c4a6/Konachan.com%20-%20354433%20original%20rain%20sakeharasu%20school_uniform%20skirt%20tie%20train%20umbrella%20water.jpg",
+      "https://cdn-pipeline-output.picsart.com/magic-flow/94730d11-3293-4b69-90f0-254bfdde23f6.png?q=85&r=1200&to=min&type=webp",
+      "https://c4.wallpaperflare.com/wallpaper/338/673/156/anime-anime-screenshot-kaoru-hana-wa-rin-to-saku-waguri-kaoruko-long-hair-hd-wallpaper-preview.jpg",
+      "https://static.zerochan.net/Memories.Off.-Innocent.Fille-.full.2413898.jpg",
+      "https://images.keizai.biz/kamakura_keizai/headline/1515650733_photo.jpg",
+      "https://wallpaperseeker.com/download/anime-train/atwdws21.jpg",
+      "https://pbs.twimg.com/media/HFcK4KTa8AE-UPe.jpg",
+      "https://konachan.com/sample/192501af2bb14e9ef6294637e0e120b3/Konachan.com%20-%20129745%20sample.jpg",
+      "https://images2.alphacoders.com/101/1013705.png",
+      "https://i.scdn.co/image/ab67616d0000b2736a139745399672cc64be2d29",
+      "https://assets.promptbase.com/Images%2ForCzcDZ1DnrmexTlVope%2Fresized%2F1742723401440d_w_800x800.webp?alt=media&token=6c22b6f2-3f79-4a17-acd3-680ebdad7347",
+      "https://i.pinimg.com/736x/06/8e/83/068e8375471cd880cb049a155d576df3.jpg",
+      "https://wallpapers.com/images/hd/anime-forest-5pw9ovuk8i838ubs.jpg",
+      "https://w0.peakpx.com/wallpaper/46/333/HD-wallpaper-anime-landscape-shrine-forest-stairs-green-environment-anime.jpg",
+      "https://rare-gallery.com/uploads/posts/4572279-anime-landscape-torii-sun-rays-forest-asian-architecture-steps-trees.jpg",
+      "https://assets.promptbase.com/Images%2FtVaSskYw5zAnrG8XbZzg%2Fresized%2F1759322343261f_800x800.webp?alt=media&token=63de919a-412d-4e58-bfb9-0cadb91e960c",
+      "https://dreamimaginations.com/wp-content/uploads/2024/09/A-Coastal-Town-in-Japan-Anime-Vibes-AI-Artwork-13_1-683x1024.jpg",
+      "https://images.steamusercontent.com/ugc/1704032262119514937/0A0EFD1E54444CE30B91B37F0C4ADD7E67C2322F/?ima=fit&imcolor=%23000000&impolicy=Letterbox&imw=512&letterbox=false",
+      "https://wallpapers.com/images/hd/anime-forest-background-t3uk02pcp5nh1jtt.jpg",
+      "https://images2.alphacoders.com/134/thumb-1920-1346816.png",
+      "https://cdn.displate.com/artwork/1200x857/2026-05-27/33f0c34a-0d43-4053-b7c9-a7c7144e6221.jpg",
+      "https://bbs.mnya.tw/assets/files/2023-11-09/1699500696-206502-oig.jpg",
+      "https://asset.watch.impress.co.jp/img/ktw/docs/1510/219/stpapl2023-06-21_c02_l.jpg",
+      "https://images.hdqwalls.com/download/anime-girl-short-hairs-crossing-street-on-rainy-day-pa-1600x1200.jpg",
+      "https://img.magnific.com/premium-photo/tokyo-city-by-night-anime-manga-drawing-illustration-city-views-purple-neon_926199-3468840.jpg?q=80&semt=ais_hybrid&w=740",
+      "https://img.goodfon.com/original/1280x1024/7/1c/anime-girl-short-hairs-crossing-street-on-rainy-day-anime-devus.jpg",
+      "https://static.displate.com/857x1200/displate/2024-06-16/4c47da09b00351ead8ad954649b69bb6_48bfacb2e04e70bedf5d6f98180630f8.jpg",
+      "https://i.etsystatic.com/50028890/r/il/e16540/6170125104/il_1588xN.6170125104_97km.jpg",
+      "https://image.cdn2.seaart.me/2025-02-04/cugoijle878c73dic690-1/9e13772d8d8362b941675d0bb7059f51_high.webp",
+      "https://halcyonrealms.com/blogpics/undergroundev.jpg",
+      "https://aiwallpaperarts.com/static/images/wallpapers/original/3021040.jpg",
+      "https://images.hdqwalls.com/download/anime-girl-short-hairs-crossing-street-on-rainy-day-pa-3840x2400.jpg",
+      "https://cdn.prompthero.com/eh5lrs1yv7r1lngpjmoifxwed9ed-stable-diffusion-15-create-an-anime-key-visual-of-a-mystical-night-sky-in-a-japanese-city-the-image-should-feature-a-cinematic.png",
+      "https://media.easy-peasy.ai/8d68e86e-ba30-4a17-bcba-d195d8712293/f91d1b6f-f4ba-4a72-8716-8e10ac98ec15_thumb.webp",
+      "https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0110/user/047bff55ecaf8084edb12b99ed7135387d38b9f8587b934f0f1ad396c70b3f49/i-img844x1200-17606119215654hdo7jq84852.jpg",
+      "https://aigf.love/characters/shrine-maiden-ai-girlfriend.png",
+      "https://images-ng.pixai.art/images/thumb/e46a8066-f26a-4531-93e4-bcde298efd83",
+      "https://static.zerochan.net/Saku.%28Pixiv.196214%29.full.807778.jpg",
+      "https://image.tensorartassets.com/cdn-cgi/image/w%3D600/model_showcase/865652996313201456/5e0b561c-8516-ef31-7b60-3ff1ddda4b41.jpg",
+      "https://i.etsystatic.com/42672957/r/il/44edd7/6457968863/il_1588xN.6457968863_p5c1.jpg",
+      "https://images-ng.pixai.art/images/thumb/2deb3c4d-54e4-4c6e-abd7-480b7fb77ffd",
+      "https://images-ng.pixai.art/images/orig/e7f75007-aa69-42bb-bfd5-982a65ee1a43",
+      "https://assets.st-note.com/img/1759226295-lOXS456AiRrnqtV91TNFDmIY.png?width=1200",
+      "https://image.cdn2.seaart.me/upload/static/20260201/169e2a9dd9aa905f48fd1b41e6c5522e_high.webp",
+      "https://www.animeclick.it/prove/upload/img/News48358.jpg",
+      "https://assets.st-note.com/img/1686276067982-eH3BAHdip6.jpg?width=800",
+      "https://files.aipictors.com/809bd8e2-c4cf-4e79-9069-e24140a38d45",
+      "https://assets.st-note.com/production/uploads/images/107404790/rectangle_large_type_2_f18f4d4f2f23d3143b827d78434c49f9.png?fit=bounds&quality=85&width=1280",
+      "https://truth.bahamut.com.tw/s01/201303/621409bfa8a43accda73aac7e7d38512.JPG",
+      "https://3.bp.blogspot.com/_js-AiFBl1-U/TQ7U27u7m6I/AAAAAAAAAOc/o4X07YyLLSk/s1600/260086.jpg",
+      "https://www.kalon.ai/_next/image?q=75&url=%2Ftemplates%2Fcouple-image-6.jpg&w=1920",
+      "https://www.bestmedia-official.uz/media/movies/1000014658.jpg",
+      "https://abrakadabra.fun/uploads/posts/2022-01/1641208309_7-abrakadabra-fun-p-parnie-avi-dlya-parnya-i-devushki-multiki-37.jpg",
+      "https://www.publicdomainpictures.net/pictures/550000/velka/japanese-boy-drawn-in-anime-style.jpg",
+      "https://k.sinaimg.cn/n/sinakd10115/385/w512h673/20220727/25c8-0750f8e8d5352b8d28ca8cc491e01483.png/w700d1q75cms.jpg",
+      "https://p2.bahamut.com.tw/B/2KU/55/9416fc2acb7c287fb91280e4de1nbaz5.JPG?v=1695263977618",
+      "https://pi.rika.ren/magica/resource/image_native/bg/story/bg_adv_13131.jpg",
+      "https://image.cdn2.seaart.ai/2023-06-13/34142984507461/4ef28ba4ee9ec1444fa5ed32d3a7a6b1833ce1d8_high.webp",
+      "https://www.tensor-art.com/anime/anime-japanese-landscape/feature.jpeg",
+      "https://ik.imagekit.io/x2dirkim6/images/scenarios/backdrops/backdrop_ZygfZvD4-.png?tr=w-3840",
+      "https://img-v3.deepdreamgenerator.com/6742773/md_fw0cuv_3f1924cd423b698b42fdf79a530a7a300216faae.jpg",
+      "https://ul.postcrest.com/kuwd16v63kwyl8cc085syp9vfbq2.png?format=webp&width=800",
+      "https://www.adobe.com/tr/products/firefly/features/media_1a24a296a3543257f3c2750fc52a3a40d025a61db.jpg?format=jpg&optimize=medium&width=750",
+      "https://img.pikbest.com/illustration/20241205/serene-japanese-garden_11211321.jpg%21bw700",
+      "https://www.reviserbac.tn/backgrounds/zen.png",
+      "https://image.cdn2.seaart.ai/2023-06-24/37777172680773/883d9a59843dc54a4bec81fb5b9f432f383f9033_high.webp",
+      "https://cdn.displate.com/artwork/857x1200/2026-03-31/870151c3-69d4-4fc4-81a2-fb0fa3cc4b22.jpg",
+      "https://image.cdn2.seaart.ai/2023-06-29/39832097136709/a51e3ea5737f2073f57151969e141e2cd249bdc1_high.webp",
+      "https://pbs.twimg.com/media/F2RkKqQakAA1l84.jpg",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/11202cfc-5699-4e01-9d64-b86c101bca58/dfug71d-9e91ad8b-0397-4cf7-8c6c-d115c8c46b1b.jpg/v1/fill/w_1280%2Ch_2253%2Cq_75%2Cstrp/ayaka_summer_festival__6__by_ishirotanaka_dfug71d-fullview.jpg",
+      "https://prompt-com.andup-tech.com/products/84173/c51a6fc9-db45-4b7a-bafa-bb1f28798a35",
+      "https://image.tensorartassets.com/cdn-cgi/image/anim%3Dtrue%2Cplain%3Dfalse%2Cw%3D2048%2Cf%3Djpeg%2Cq%3D85/posts/images/665049662851616263/f88b6ace-9bc7-4979-90ec-0fea800b1ed5.jpg",
+      "https://static.zerochan.net/Kemi.Neko.full.691572.jpg",
+      "https://img-baofun.zhhainiao.com/pcwallpaper_ugc_mobile/static/cdd62e8842a39766aad6005541f85aee.png",
+      "https://assets.st-note.com/img/1717070457388-be0JtRNwOR.png?width=1200"
+    ];
+    const gallery = document.querySelector('#gallery');
+    images.forEach((src, index) => {
+      const figure = document.createElement('figure');
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = `日本动漫风格图片 ${index + 1}`;
+      img.loading = index < 10 ? 'eager' : 'lazy';
+      img.decoding = 'async';
+      img.addEventListener('error', () => figure.classList.add('failed'), { once: true });
+      const caption = document.createElement('figcaption');
+      caption.textContent = String(index + 1).padStart(2, '0');
+      figure.append(img, caption);
+      gallery.append(figure);
+    });
+  </script>
+</body>
+</html>
